@@ -1,0 +1,128 @@
+x-app-environment: &app-environment
+  APP_HTTP_ADDR: :8080
+  MCP_HTTP_ADDR: :8081
+  EMBEDDINGS_BASE_URL: http://embeddings:8080
+  EMBEDDING_MODEL_ID: ${EMBEDDING_MODEL_ID:-Qwen/Qwen3-Embedding-0.6B-GGUF:Q8_0}
+  EMBEDDING_DIM: ${EMBEDDING_DIM:-1024}
+  # Inherit an explicit override; otherwise use the application's Qwen default.
+  # An explicitly empty value remains a supported override for other models.
+  EMBEDDING_QUERY_PREFIX:
+  CHUNK_SIZE_RUNES: ${CHUNK_SIZE_RUNES:-1200}
+  CHUNK_OVERLAP_RUNES: ${CHUNK_OVERLAP_RUNES:-200}
+  SEARCH_DEFAULT_LIMIT: "10"
+  SEARCH_MAX_LIMIT: "20"
+
+x-postgres-environment: &postgres-environment
+  <<: *app-environment
+  STORAGE_BACKEND: postgres
+  POSTGRES_DSN: postgres://rag:rag@postgres:5432/rag?sslmode=disable
+
+x-qdrant-environment: &qdrant-environment
+  <<: *app-environment
+  STORAGE_BACKEND: qdrant
+  QDRANT_URL: http://qdrant:6333
+  QDRANT_COLLECTION: ${QDRANT_COLLECTION:-myrag_documents}
+  QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+
+x-postgres-dependencies: &postgres-dependencies
+  embeddings:
+    condition: service_healthy
+  postgres:
+    condition: service_healthy
+
+x-qdrant-dependencies: &qdrant-dependencies
+  embeddings:
+    condition: service_healthy
+  qdrant:
+    condition: service_healthy
+
+services:
+  postgres:
+    profiles: [postgres]
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: rag
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      # Docker applies these only to a new, empty database volume.
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-6432}:5432"
+    healthcheck:
+      # The initialization server accepts only Unix sockets, not this TCP probe.
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U rag -d rag"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  qdrant:
+    profiles: [qdrant]
+    image: qdrant/qdrant:v1.20.0
+    environment:
+      QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY:-}
+    volumes:
+      - qdrant-data:/qdrant/storage
+      - ./deployments/qdrant/healthcheck.sh:/qdrant/healthcheck.sh:ro
+    ports:
+      - "127.0.0.1:${QDRANT_PORT:-6333}:6333"
+    healthcheck:
+      test: ["CMD", "bash", "/qdrant/healthcheck.sh"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  embeddings:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command: ["-m", "/models/model.gguf", "--embedding", "--port", "8080"]
+    environment:
+      LLAMA_ARG_POOLING: ${EMBEDDING_POOLING:-last}
+      LLAMA_ARG_N_GPU_LAYERS: "0"
+    volumes:
+      - ${EMBEDDING_MODEL_FILE:-./models/Qwen3-Embedding-0.6B-Q8_0.gguf}:/models/model.gguf:ro
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  app:
+    profiles: [postgres]
+    build: .
+    command: [app]
+    environment: *postgres-environment
+    depends_on: *postgres-dependencies
+    ports:
+      - "127.0.0.1:${POSTGRES_APP_PORT:-8080}:8080"
+
+  mcp:
+    profiles: [postgres]
+    build: .
+    command: [mcp]
+    environment: *postgres-environment
+    depends_on: *postgres-dependencies
+    ports:
+      - "127.0.0.1:${POSTGRES_MCP_PORT:-8081}:8081"
+
+  app-qdrant:
+    profiles: [qdrant]
+    build: .
+    command: [app]
+    environment: *qdrant-environment
+    depends_on: *qdrant-dependencies
+    ports:
+      - "127.0.0.1:${QDRANT_APP_PORT:-8082}:8080"
+
+  mcp-qdrant:
+    profiles: [qdrant]
+    build: .
+    command: [mcp]
+    environment: *qdrant-environment
+    depends_on: *qdrant-dependencies
+    ports:
+      - "127.0.0.1:${QDRANT_MCP_PORT:-8083}:8081"
+
+volumes:
+  postgres-data:
+  qdrant-data:

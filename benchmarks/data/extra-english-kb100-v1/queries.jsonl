@@ -1,0 +1,320 @@
+{"_id": "1", "text": "What approvals are needed before a new employee can activate an account?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "2", "text": "A recruit waited three days before opening the welcome link. How should support let them join?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "3", "text": "Someone becoming an employee already has a contractor login. Should the service desk create another identity?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "4", "text": "What information must a sponsor include in a contractor access request?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "5", "text": "An outside worker still needs the project after their permission period ends. How can that period be continued?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "6", "text": "The employee responsible for an external consultant has left. How can the consultant retain authorized access?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "7", "text": "How does support verify an employee who has lost their sign-in phone?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "8", "text": "I cannot generate the login codes anymore. What temporary route lets me register a new authenticator?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "9", "text": "A lost phone has both the authenticator and open company sessions. What extra action is required during recovery?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "10", "text": "Who must authorize use of the emergency administrator identity?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "11", "text": "Normal sign-in is down and we used the sealed credential to repair it. What must happen after the session?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "12", "text": "The project administrator is away, but employee login works. Is emergency administrator entry the right route?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "13", "text": "What ownership information is required for an automated service account?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "14", "text": "An account has no people assigned to it. How do we establish whether any background jobs still depend on it?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "15", "text": "Another team is taking responsibility for a running service. How should its machine identity be transferred?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "16", "text": "How can an integration rotate its API key without interrupting consumers?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "17", "text": "We deployed a replacement credential successfully. When do we remove the previous one, and what gets recorded?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "18", "text": "An API key may have been stolen. Should the owner leave it valid during the normal rotation overlap?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "19", "text": "What must an employee request to obtain temporary administrative permission?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "20", "text": "My short-lived admin window is about to close while a task is unfinished. How can I continue with authorization?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "21", "text": "A teammate needs the same elevated right several times every week. Which process reviews a more durable role?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "22", "text": "Which access actions occur when an employee departure reaches its scheduled time?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "23", "text": "How can a manager preserve business correspondence and shared records after someone leaves without keeping their login alive?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "24", "text": "A departure needs to take effect immediately, but the laptop has not been returned. Can identity shutdown proceed?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "25", "text": "What should resource owners verify during the quarterly access review?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "26", "text": "What happens to a permission whose business justification remains unanswered during certification?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "27", "text": "An active employee changed teams and no longer needs one resource. Should certification disable their entire employee account?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "28", "text": "What information should an employee provide when a company laptop goes missing?", "title": "", "kind": "direct", "cluster": "access"}
+{"_id": "29", "text": "Can support claim that a remote lock succeeded while the missing computer has never reconnected?", "title": "", "kind": "paraphrase", "cluster": "access"}
+{"_id": "30", "text": "A missing laptop was recovered without being erased. What has to happen before it is trusted again?", "title": "", "kind": "scenario", "cluster": "access"}
+{"_id": "31", "text": "What information is needed to restore a database to a time before an accidental change?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "32", "text": "Why can yesterday backup alone fail to reproduce the database at a particular minute this morning?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "33", "text": "Only one customer record was accidentally deleted while other users kept working. How should recovery preserve their later changes?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "34", "text": "How long can a project owner recover a deleted shared file from the recoverable bin?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "35", "text": "Will undeleting a document replace a newer item that now has the same name?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "36", "text": "A shared file was deleted more than thirty days ago. Can a newly requested hold guarantee its restoration?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "37", "text": "Who approves moving a service to the recovery site during a facility outage?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "38", "text": "What data-position information should be established before users are routed to the standby facility?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "39", "text": "The original facility is reachable again after a recovery-site move. Can traffic return before new writes are reconciled?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "40", "text": "What happens when a stored backup fails its manifest checksum check?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "41", "text": "What checks are needed before a separate backup copy can replace a suspected damaged one?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "42", "text": "One database backup is corrupt. Should the team delete the other retained copies as part of the exception?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "43", "text": "Where and how often should a service demonstrate restoration from a retained backup?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "44", "text": "What must be checked beyond downloading a backup before a recovery rehearsal counts as successful?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "45", "text": "A restoration rehearsal finishes too slowly. Can it be recorded as passing while improvements are still pending?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "46", "text": "What information identifies the backup sets covered by a preservation hold?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "47", "text": "Can an operator acknowledge that an already-expired backup is preserved just because its date appears in a new request?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "48", "text": "Who can release a backup preservation hold when an application owner wants to reduce storage costs?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "49", "text": "Does changing the active backup-writing key automatically re-encrypt historical backup sets?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "50", "text": "How can the storage team determine whether an older decryption key is still needed?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "51", "text": "An old backup key may be exposed. Should operators immediately destroy it if retained backups still depend on it?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "52", "text": "What recovery environment is required after a ransomware compromise?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "53", "text": "What must a restored server pass before it can reconnect to the normal production network?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "54", "text": "Some useful records were created after the clean recovery point. How can they be recovered without attaching a compromised disk?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "55", "text": "How do the standard and extended backup retention tiers differ?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "56", "text": "Can moving a backup job to a longer history tier bring back a set that has already expired?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "57", "text": "A specific investigation requires keeping selected backup sets. Is changing the entire job to extended retention equivalent to a case hold?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "58", "text": "What evidence establishes that a scheduled backup job has completed?", "title": "", "kind": "direct", "cluster": "recovery"}
+{"_id": "59", "text": "The backup process exited without error, but its catalog acknowledgment is missing. Should monitoring mark the job successful?", "title": "", "kind": "paraphrase", "cluster": "recovery"}
+{"_id": "60", "text": "How does an unregistered backup run differ from a registered set that fails its checksum?", "title": "", "kind": "scenario", "cluster": "recovery"}
+{"_id": "61", "text": "When should the network team lower a DNS record cache lifetime before a planned move?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "62", "text": "Which resolution checks should confirm a hostname cutover beyond a lookup on the operator laptop?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "63", "text": "A DNS cutover is rolled back. Why can some clients continue reaching the new destination for a while?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "64", "text": "How far before expiry should public certificate renewal begin?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "65", "text": "How do we verify that visitors receive the replacement certificate rather than merely confirm that a new file exists?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "66", "text": "Some clients still see the previous certificate after renewal. What deployment consistency check is required?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "67", "text": "Which timings help separate reverse-proxy delay from application delay?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "68", "text": "The gateway connects quickly, then waits a long time for the upstream answer. Which team should investigate next?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "69", "text": "A client takes a long time to upload a request body. Should that automatically be classified as a slow application response?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "70", "text": "What stages should the help desk check when an employee VPN connection fails?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "71", "text": "The remote-access tunnel signs in successfully, but company hostnames do not resolve. What should support inspect?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "72", "text": "Only one remote employee cannot connect, while office users can use the application. Is that enough to declare an application-wide outage?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "73", "text": "What is the approved path for administrators to open an SSH session to a managed server?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "74", "text": "An administrator short-lived login certificate has expired. How should they open another connection?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "75", "text": "A target cannot be reached through the bastion. Should an operator temporarily expose public SSH to diagnose it?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "76", "text": "What fields are needed to request a temporary firewall exception?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "77", "text": "Does an unresolved support ticket keep an expiring network rule active beyond its approved period?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "78", "text": "A service now needs an ongoing connection that began as a short exception. How should the owner authorize it permanently?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "79", "text": "What must be checked at the origin before requesting an edge-cache invalidation?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "80", "text": "Why should the web team prefer refreshing selected cache tags over clearing the whole site?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "81", "text": "Only one browser shows old content while clean clients are current. Should the team keep purging the shared edge cache?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "82", "text": "How should webhook clients respond to a temporary throttling response?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "83", "text": "Should repeated attempts to deliver one event use new identifiers or retain the original identity?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "84", "text": "A receiver rejected an event because a required field is invalid. Does the temporary-throttle retry policy apply?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "85", "text": "What should a release operator do before stopping a node behind a load balancer?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "86", "text": "A node no longer receives fresh traffic. How can the operator determine whether accepted requests still need time to finish?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "87", "text": "A streaming connection can last longer than the normal ninety-second drain. What must the service owner prepare?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "88", "text": "What traffic share starts a canary release, and what is compared against the control?", "title": "", "kind": "direct", "cluster": "network"}
+{"_id": "89", "text": "Does a new version become eligible for promotion merely because its process is healthy and fifteen minutes have elapsed?", "title": "", "kind": "paraphrase", "cluster": "network"}
+{"_id": "90", "text": "A canary causes errors while the old version is healthy. What traffic action should happen before broader rollback measures?", "title": "", "kind": "scenario", "cluster": "network"}
+{"_id": "91", "text": "What evidence determines an incident priority at initial triage?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "92", "text": "When does a failure of a paid workflow qualify for the most urgent response level?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "93", "text": "An issue thought to affect one workspace is now confirmed in many workspaces. What should happen to its priority and history?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "94", "text": "What should an incident scribe record, and which timestamp convention is used?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "95", "text": "How should an early incident assumption be corrected after responders discover it was wrong?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "96", "text": "Can the internal responder timeline be copied directly into a customer-facing status update?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "97", "text": "What information belongs in the first customer-facing incident update?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "98", "text": "Should customers receive another update if a severe incident investigation has found nothing new for half an hour?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "99", "text": "An application process restarted successfully. Is that sufficient evidence to publish that the customer incident is resolved?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "100", "text": "What should be checked before an incident-driven production rollback?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "101", "text": "Why might redeploying an old program version fail to undo a release that transformed stored data?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "102", "text": "The rollback command completed without error. What must responders verify before treating the original problem as repaired?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "103", "text": "When should a post-incident learning review take place?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "104", "text": "What makes a follow-up improvement actionable rather than a general promise to be more careful?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "105", "text": "The team has restored service but still has competing explanations. Must the learning review wait until one cause is proved?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "106", "text": "What is the first credential action after a secret appears in a public repository?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "107", "text": "After disabling a published credential, how should responders investigate whether someone used it?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "108", "text": "Can an exposed integration key stay active for the routine rotation overlap while consumers migrate?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "109", "text": "Which measurements should be compared when investigating a growing message queue?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "110", "text": "One repeatedly failing event is holding up useful queued work. How should responders handle that event?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "111", "text": "The queue is growing because its downstream database is already saturated. Should the responder immediately add more consumers?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "112", "text": "What distinctions help isolate a checkout incident to the payment provider?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "113", "text": "A customer payment may have succeeded externally while our confirmation timed out. What should happen before another charge attempt?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "114", "text": "The payment provider is unavailable but other account features work. Should all customer accounts be disabled?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "115", "text": "Where should a responder report suspected unintended customer-data access?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "116", "text": "What should happen to original access records while a possible data exposure is being assessed?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "117", "text": "An engineer suspects customer information was exposed but scope is unverified. Who decides whether affected customers are contacted?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "118", "text": "How far in advance should customer-visible maintenance be announced?", "title": "", "kind": "direct", "cluster": "incidents"}
+{"_id": "119", "text": "What communication is required when planned maintenance lasts longer than its advertised window?", "title": "", "kind": "paraphrase", "cluster": "incidents"}
+{"_id": "120", "text": "An unrelated severe outage begins during a small scheduled change. Should it remain classified only as planned maintenance?", "title": "", "kind": "scenario", "cluster": "incidents"}
+{"_id": "121", "text": "What ownership and source information is needed to publish a knowledge article?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "122", "text": "A page is visible in the editor but cannot yet be found by semantic search. Which separate state should the author inspect?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "123", "text": "An author proposes another article with the same instructions for the same audience. Should the editor publish it as a separate entry?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "124", "text": "Which article metadata fields must use the controlled knowledge taxonomy?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "125", "text": "How can an author justify adding a new primary browsing category?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "126", "text": "A page needs to move to a different category while its instructions stay valid. Does that require a new article identity?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "127", "text": "What happens to an obsolete knowledge article when its owner retires it?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "128", "text": "How should readers following old bookmarks be directed when a procedure has been replaced?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "129", "text": "A page contains content that must be permanently removed from history. Is normal article retirement sufficient?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "130", "text": "What should an editor compare before merging two duplicate knowledge pages?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "131", "text": "How do old links and search results change after duplicate instructions are consolidated?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "132", "text": "Two guides mention API credentials, but one covers routine rotation and the other emergency exposure. Should similar wording make them a merge candidate?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "133", "text": "What authorization check determines whether a reader may receive a knowledge search result?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "134", "text": "A viewer was removed at the source. Which synchronization state should be checked rather than simply rebuilding the vectors?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "135", "text": "The service cannot synchronize an article access rules. Should an operator make it public so indexing can finish?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "136", "text": "What should an owner do when a knowledge article reaches its review date?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "137", "text": "Does fixing a typo establish that old operating instructions have been checked for current validity?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "138", "text": "A stale article has no reachable owner. Who should resolve its ownership rather than just postpone its review date?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "139", "text": "What evidence should a reader provide when reporting an unhelpful semantic search result?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "140", "text": "Why should the search steward confirm that an expected page is indexed and authorized before changing the embedding model?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "141", "text": "One complaint improves after a model switch. What broader evidence is required before replacing the retrieval model?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "142", "text": "How should an owner replace an article attached source file while preserving its identity?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "143", "text": "A new attachment revision cannot be extracted. What should readers continue receiving until a valid replacement is ready?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "144", "text": "A revised source file keeps its old filename but changes pagination. What references must the owner recheck?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "145", "text": "Which kinds of documents can the ingestion service extract and index?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "146", "text": "What should happen to an uploaded PDF that contains only scanned page images?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "147", "text": "A protected attachment cannot be read. Should its password be added to article metadata so indexing can proceed?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "148", "text": "What should a reviewer verify when checking whether a citation supports an answer?", "title": "", "kind": "direct", "cluster": "knowledge"}
+{"_id": "149", "text": "A source changed after an answer was produced. Which version should be used to check its quoted passage?", "title": "", "kind": "paraphrase", "cluster": "knowledge"}
+{"_id": "150", "text": "The correct article was retrieved, but the answer makes an unsupported conclusion. Is that solely a retrieval-ranking failure?", "title": "", "kind": "scenario", "cluster": "knowledge"}
+{"_id": "151", "text": "What information should support collect for a customer-requested subscription refund?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "152", "text": "A refund has been approved internally. Does that mean the returned money must already be visible on the customer bank statement?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "153", "text": "A subscriber says the same purchase was charged twice. Which check should happen before a discretionary refund decision?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "154", "text": "What case should be created after an existing subscription fails to renew?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "155", "text": "How should a customer replace an unusable payment method while their renewal is in its grace period?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "156", "text": "A renewal remains unpaid after the grace period, but support is still talking to the customer. Does that conversation reset the restriction deadline?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "157", "text": "How does the payments team determine whether a customer really paid twice?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "158", "text": "Two settled charges are confirmed for one intended order. How should the excess be corrected without canceling the valid purchase?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "159", "text": "A bank statement shows a second pending hold but no second capture. Should support refund that hold as though it were a settled payment?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "160", "text": "How is the charge for an annual subscription upgrade determined partway through the term?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "161", "text": "Does moving to a higher annual plan create a new renewal anniversary or preserve the original date?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "162", "text": "A customer wants to accept an expired upgrade quote. Should support apply its old adjustment amount unchanged?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "163", "text": "What should a customer identify when requesting a correction to an issued invoice?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "164", "text": "Can support silently overwrite an issued invoice file after fixing its details?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "165", "text": "A customer changes the recipient details for future billing. Does that automatically rewrite every historical invoice?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "166", "text": "Who can request an extension when a customer needs more time for an active trial?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "167", "text": "What changes when a one-time trial extension is approved?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "168", "text": "A customer has already become a paying subscriber. Can support use the trial-extension tool to turn the account back into a trial?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "169", "text": "What information is needed to request a workspace usage-quota increase?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "170", "text": "Will a temporary allowance remain permanent merely because the customer successfully used it?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "171", "text": "A workspace repeatedly needs more capacity than its plan allows. Should support keep extending a short quota exception indefinitely?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "172", "text": "When can a requested subscription billing currency change take effect?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "173", "text": "How is the future price established when a customer moves to another billing currency?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "174", "text": "An existing invoice has the wrong amount. Will changing the currency used at the next renewal correct that document?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "175", "text": "What evidence should the payments team gather for a provider payment dispute?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "176", "text": "Does emailing a customer satisfy the deadline for submitting evidence to a payment provider?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "177", "text": "A disputed payment is under provider review and support wants to refund it. Why must the payments owner be consulted first?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "178", "text": "What information supports a goodwill account-credit proposal?", "title": "", "kind": "direct", "cluster": "billing"}
+{"_id": "179", "text": "Can one large accommodation be divided into small credits to avoid the finance-manager approval threshold?", "title": "", "kind": "paraphrase", "cluster": "billing"}
+{"_id": "180", "text": "Does approving account credit automatically return cash to the customer original payment method?", "title": "", "kind": "scenario", "cluster": "billing"}
+{"_id": "181", "text": "Which fields must be registered before a warehouse item first arrives?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "182", "text": "A supplier changes how many pieces are in each carton. What should inventory staff check before receiving stock?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "183", "text": "An equivalent item is now purchased from a different supplier. Does the supplier name alone require a new stock identity?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "184", "text": "What evidence should support a proposed warehouse inventory quantity adjustment?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "185", "text": "Does correcting the stock balance remove the historical movements that led to the old number?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "186", "text": "A stock mismatch comes from an unposted delivery receipt. Should the warehouse add an unrelated adjustment before posting that receipt?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "187", "text": "What should receiving staff do with supplier goods that arrive visibly damaged?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "188", "text": "Does placing damaged incoming stock in quarantine mean the supplier has already agreed to compensate the company?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "189", "text": "No customer bought the damaged units; they arrived that way from a supplier. Which intake workflow should handle them?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "190", "text": "What evidence helps establish where an outgoing parcel went missing?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "191", "text": "The carrier confirms that it lost a dispatched package. How should the customer remedy be linked to the original case?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "192", "text": "A label exists, but there is no carrier handoff scan. Should the desk begin by claiming carrier loss?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "193", "text": "What should the export coordinator check before releasing a cross-border parcel?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "194", "text": "How should shipping staff handle a declaration that only describes its contents as miscellaneous items?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "195", "text": "The destination country changes after export paperwork is prepared. Can staff update only the address label?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "196", "text": "What should the warehouse compare when receiving an authorized customer return?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "197", "text": "Does a warehouse decision that returned goods cannot be reused automatically authorize a payment refund?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "198", "text": "A parcel arrives without a recognizable return reference. Should staff assign it to a roughly similar customer order?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "199", "text": "What information belongs in a cold-storage temperature-excursion record?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "200", "text": "Can an urgent customer order override the quality hold on stock exposed to an abnormal temperature?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "201", "text": "Only one cold-storage zone overheated. How should staff identify which lots were actually exposed during the event?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "202", "text": "Why are expected stock quantities hidden during a blind cycle count?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "203", "text": "What should happen before a large difference from the expected inventory balance becomes an adjustment?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "204", "text": "Goods moved through a bin while its count was underway. Can that count be accepted as an unchanged snapshot?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "205", "text": "How is an approved split dispatch represented against the customer purchase?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "206", "text": "The first parcel of a split order has arrived. Should the entire order be marked delivered?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "207", "text": "The customer asked for one consolidated delivery, but labels for available items are ready. Can the warehouse send those items separately?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "208", "text": "What events make a preorder eligible for warehouse fulfillment?", "title": "", "kind": "direct", "cluster": "logistics"}
+{"_id": "209", "text": "How should newly received stock be allocated among customers who have been waiting for a preorder?", "title": "", "kind": "paraphrase", "cluster": "logistics"}
+{"_id": "210", "text": "A similar replacement product arrives instead of the reserved specification. Can it be dispatched to preorder customers without acceptance?", "title": "", "kind": "scenario", "cluster": "logistics"}
+{"_id": "211", "text": "What information must a producer register before a new analytics feed is enabled?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "212", "text": "A sample delivery landed in storage. What must happen before dashboards can begin using that source?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "213", "text": "A producer wants to reuse an existing event name for a different business action. Is that merely a new file location?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "214", "text": "What should a producer provide when proposing an analytics event schema change?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "215", "text": "How does removing a required field differ from adding an optional field for compatibility review?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "216", "text": "The producer already emits the new event version. Can the previous format be retired before checking remaining consumers?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "217", "text": "Which timestamp assigns an analytics event to its business reporting period?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "218", "text": "An event arrives several days after its reporting cutoff but inside the correction window. How should its historical report be updated?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "219", "text": "A delivery contains events much older than the automatic correction window. Should the operator replay it directly into current production reports?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "220", "text": "Which fields identify an event that has been delivered more than once?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "221", "text": "How should a producer correct an accepted business event rather than disguise a replay as a new event?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "222", "text": "Two producers both send an event numbered 42. Should one be discarded solely because its local identifier matches the other?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "223", "text": "Which timezone determines the day boundaries used in workspace reports?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "224", "text": "Does changing a workspace reporting timezone automatically reinterpret all already-published historical periods?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "225", "text": "How should business-day reporting handle a clock change that makes a local day shorter or longer than twenty-four hours?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "226", "text": "What information makes a shared analytics metric fully defined?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "227", "text": "Why does changing the filter population require review even when a chart keeps its old metric name?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "228", "text": "Two teams need different populations for their counts. Should they publish different formulas under one supposedly shared metric?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "229", "text": "What scope information is required to request an analytics export?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "230", "text": "How are approved extraction files delivered to their named recipients?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "231", "text": "A requester adds columns after an export was approved. Can the operator treat the original approval as covering the expanded dataset?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "232", "text": "What preview should be reviewed before a scheduled analytics retention purge?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "233", "text": "Can a storage-pressure alert justify purging a partition that has an active preservation marker?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "234", "text": "Source records were purged but a dashboard still shows an older aggregate. Does that prove the underlying row deletion failed?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "235", "text": "What evidence should be collected when an analytical query becomes slow?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "236", "text": "A one-week report scans years of data. What scope-related behavior should be checked before adding compute?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "237", "text": "The query is spending its time waiting for another transaction. Is rebuilding an index necessarily the right first action?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "238", "text": "How should a serving index be rebuilt without taking the existing search path away?", "title": "", "kind": "direct", "cluster": "data"}
+{"_id": "239", "text": "What validation is required before a freshly built index becomes the serving version?", "title": "", "kind": "paraphrase", "cluster": "data"}
+{"_id": "240", "text": "A newly promoted index fails verification. What retained object allows the serving pointer to be switched back quickly?", "title": "", "kind": "scenario", "cluster": "data"}
+{"_id": "241", "text": "What information should a manager include when requesting a new employee laptop?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "242", "text": "How early should a manager arrange a purchased device for an employee start date?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "243", "text": "An employee assigned laptop is being repaired for a few days. Should the desk immediately order another permanent laptop?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "244", "text": "What information is recorded when an employee borrows a loaner laptop?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "245", "text": "How can a temporary device borrower extend the normal ten-day borrowing period?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "246", "text": "A borrowed computer has been physically returned. Can it be handed straight to the next borrower before its data-removal check?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "247", "text": "What should an employee register before inviting a visitor to the office?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "248", "text": "Does wearing a visitor badge allow a guest to move alone through staff-only office areas?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "249", "text": "A visitor arrives while their registered host is unavailable. What must reception arrange before admitting them further?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "250", "text": "What details are needed before business travel can be approved and booked?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "251", "text": "The proposed itinerary now costs substantially more than its approved estimate. What should happen before purchase?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "252", "text": "An employee moves the trip dates in their calendar. Does that also change the purchased tickets and hotel booking?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "253", "text": "Which supporting records are required for an employee expense reimbursement?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "254", "text": "How soon after an activity should an employee submit its reimbursement claim?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "255", "text": "The company already paid for a hotel directly. Should the employee include that amount as another personal reimbursement?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "256", "text": "What information should be included when reporting a meeting-room audio or display problem?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "257", "text": "A meeting is already underway when its room display fails. What practical assistance should the desk offer first?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "258", "text": "The room display works with a test laptop but fails with one attendee device. Should the display automatically be replaced?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "259", "text": "What should reception record when an office parcel arrives?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "260", "text": "How long does a normal uncollected parcel remain before the recipient manager is contacted?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "261", "text": "A parcel arrives for someone who has left the company. Can any colleague open it because they recognize the former employee name?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "262", "text": "How should an employee request an assessment for ergonomic work equipment?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "263", "text": "Can an employee trial approved equipment before it is permanently assigned?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "264", "text": "The first trial item did not improve the work setup. What should happen instead of retaining multiple trial items indefinitely?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "265", "text": "What business justification and cost details are needed for a learning-budget request?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "266", "text": "Can an employee purchase a course personally and assume it will automatically be reimbursed without prior approval?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "267", "text": "An approved learner can no longer attend. What action could preserve value before the provider cancellation deadline?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "268", "text": "What evidence supports a remote employee home-connectivity allowance claim?", "title": "", "kind": "direct", "cluster": "workplace"}
+{"_id": "269", "text": "An employee changed departments during a month. Can both departments pay a connectivity allowance for that same service period?", "title": "", "kind": "paraphrase", "cluster": "workplace"}
+{"_id": "270", "text": "Does the recurring home-internet allowance automatically authorize reimbursement for a newly purchased router?", "title": "", "kind": "scenario", "cluster": "workplace"}
+{"_id": "271", "text": "How should a code-change author determine which maintainers must review a change?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "272", "text": "A branch changes several independently owned components. Does approval from one component maintainer cover all of them?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "273", "text": "The normal code reviewer is away. What authorized route should be used instead of self-approving the change?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "274", "text": "What evidence is required before a test can be classified as flaky and quarantined?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "275", "text": "Do quarantined tests stop running, or are their results still collected somewhere visible?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "276", "text": "A supposedly flaky test reveals a repeatable product regression. Should its quarantine label allow the regression to pass unnoticed?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "277", "text": "Who can initiate an urgent security patch outside the standard release schedule?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "278", "text": "What review and validation should remain visible when some normal checks are deferred for an emergency patch?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "279", "text": "A security correction must ship during a release freeze. Does the finding itself replace the separate freeze-exception authorization?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "280", "text": "What compatibility information should accompany a routine dependency upgrade?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "281", "text": "What should reviewers see besides a changed version declaration when a dependency is upgraded?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "282", "text": "One dependency needs an urgent security fix. Does that justify upgrading unrelated dependencies without checking their compatibility?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "283", "text": "What must a feature owner establish before retiring a rollout flag?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "284", "text": "Why should code, background jobs, and operational references be checked before deleting a feature-flag configuration entry?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "285", "text": "A feature is fully enabled, but its flag is still required by the active rollback plan. Should the flag be deleted just to finish cleanup?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "286", "text": "Where should a team store large generated binary outputs rather than attach them to every source commit?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "287", "text": "Why is a mutable latest artifact label insufficient to reproduce an old deployment?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "288", "text": "A huge binary was removed in a later commit. Does that alone remove its contents from the repository historical revisions?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "289", "text": "What information is needed to request permission to deploy during a release freeze?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "290", "text": "Can a freeze exception for one specific correction be reused for unrelated work on the same branch?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "291", "text": "An incident requires rolling back during a freeze. Can a new feature be bundled into that recovery action without a separate decision?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "292", "text": "Which workload and runtime details must be held comparable for a load-test baseline?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "293", "text": "Why should a performance report include latency percentiles and failed requests rather than only an average?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "294", "text": "One benchmark run shared its host with another heavy job. Can its speed difference be reported as a controlled capacity improvement without qualification?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "295", "text": "What should a service owner establish when observed settings differ from the approved configuration?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "296", "text": "How should a legitimate emergency runtime adjustment be reconciled with the versioned configuration?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "297", "text": "A configuration drift involves a secret. Must the actual secret value be pasted into the ordinary change diff?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "298", "text": "Which kinds of API behavior change should be assessed as potentially breaking for clients?", "title": "", "kind": "direct", "cluster": "engineering"}
+{"_id": "299", "text": "What should happen before withdrawing an old API contract after a new major version is published?", "title": "", "kind": "paraphrase", "cluster": "engineering"}
+{"_id": "300", "text": "A large internal rewrite preserves the existing requests and response meaning. Does source-change size alone require a new major API contract?", "title": "", "kind": "scenario", "cluster": "engineering"}
+{"_id": "301", "text": "How do we revoke a departing employee personal access and transfer ownership of automated service identities they supported?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "302", "text": "What procedures cover recovering a lost sign-in phone and containing a missing company laptop at the same time?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "303", "text": "How do we authorize temporary administrator rights and certify whether existing standing resource permissions are still needed each quarter?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "304", "text": "Which procedures distinguish routine API-key replacement from an exposed credential that requires immediate containment?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "305", "text": "How do we recover a mistakenly deleted database record and separately restore a deleted shared document?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "306", "text": "What should we check when a backup job lacks its completion acknowledgment and another retained set fails an integrity checksum?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "307", "text": "Which instructions cover keeping selected backup sets on a case hold and deciding when an old backup decryption key can be retired?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "308", "text": "How do we plan a DNS destination cutover and verify the public certificate served by its new edge nodes?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "309", "text": "What procedures cover draining accepted node connections and deciding whether a canary release is ready for more traffic?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "310", "text": "How do we troubleshoot an employee VPN tunnel and separately arrange reimbursement for that employee eligible home connection?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "311", "text": "Which records explain assigning incident priority and publishing customer-facing incident progress updates?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "312", "text": "What should the team record during incident response and how should it turn that record into a later learning review?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "313", "text": "How should we distinguish a refund request for a subscription from reconciliation of two captured payments for one order?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "314", "text": "Which procedures cover correcting an already-issued invoice and changing the currency used for future subscription charges?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "315", "text": "How should we handle a payment dispute while considering whether a customer should receive account credit rather than returned cash?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "316", "text": "What procedures distinguish damaged goods arriving from a supplier from goods sent back by a customer?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "317", "text": "How do we conduct a blind cycle count and investigate a quantity correction when its recount still disagrees with the stock system?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "318", "text": "Which procedures cover making sense of late-arriving business events and assigning those events to the correct local reporting day?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "319", "text": "How do we plan an analytics schema migration and coordinate a separately versioned breaking client-facing API contract?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}
+{"_id": "320", "text": "What procedures authorize an urgent security correction and its deployment while a release freeze is active?", "title": "", "kind": "multi_article", "cluster": "cross_workflow"}

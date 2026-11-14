@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Preserve checksummed benchmark inputs exactly across platforms.
+/benchmarks/data/** -text

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Save RAG information"
+  short_description: "Save a new document in this RAG knowledge base"
+  default_prompt: "Use $myrag-save to save this information in the local RAG knowledge base."

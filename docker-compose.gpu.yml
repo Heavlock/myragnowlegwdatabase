@@ -1,0 +1,10 @@
+# Optional NVIDIA CUDA acceleration; combine with docker-compose.yml.
+services:
+  embeddings:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    environment:
+      LLAMA_ARG_N_GPU_LAYERS: "99"
+      # This build emits CUDA discovery and layer-placement details at level 4.
+      LLAMA_ARG_LOG_VERBOSITY: "4"
+    devices:
+      - "nvidia.com/gpu=${EMBEDDING_GPU_ID:-0}"

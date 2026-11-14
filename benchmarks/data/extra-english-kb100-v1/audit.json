@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "articles": 100,
+  "queries": 320,
+  "positive_judgments": 340,
+  "word_count_min": 117,
+  "word_count_max": 139,
+  "word_count_total": 12686,
+  "unique_titles": 100,
+  "exact_question_in_corpus": 0,
+  "support_passages_verified": 340,
+  "frozen_manifest_sha256": "35810993317f3e31321ea4cb65c313a6899962463da45cdc1a8f501fe93f14cb",
+  "label_audit": "Author checks and exact passage validation only; not an independent semantic relevance review."
+}

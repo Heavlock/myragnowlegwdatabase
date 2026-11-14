@@ -1,0 +1,12 @@
+.git
+.idea
+benchmarks
+reports
+models
+node_modules
+**/__pycache__
+backups/
+.venv*/
+
+.agents
+AGENTS.md

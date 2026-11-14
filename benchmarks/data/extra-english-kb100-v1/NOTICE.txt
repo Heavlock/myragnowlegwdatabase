@@ -1,0 +1,22 @@
+EXTRA-English-KB100 v1
+
+Original, synthetic English benchmark authored for the myragnowlegwdatabase project.
+Aster Works and all its procedures, people, requirements and operational details
+in this dataset are fictional. These articles are test fixtures, not advice or
+instructions for a real organization. No Wikipedia text is included.
+
+The same assistant authored the documents, questions and relevance labels.
+Labels were checked against supporting passages and related distractors, but
+have not been independently reviewed by humans. This controlled, small-corpus
+test supplements the public SciFact benchmark; it does not replace it.
+
+Each of the 100 articles has three queries: direct, paraphrase, and scenario.
+The scenario questions introduce constraints to distinguish neighboring workflows.
+Twenty additional multi-article questions each have two relevant targets.
+All 320 queries are evaluated against the complete corpus. Relevance means the
+article supplies the requested procedure or fact; topical overlap alone is not
+relevance. Each query has authored targets and supporting passages.
+
+Freeze policy: source records, corpus, queries, qrels, and judgments are hashed
+before any model run. No post-result edits or question filtering are permitted
+within this version. A changed dataset requires a new version.

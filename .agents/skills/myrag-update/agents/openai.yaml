@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update RAG information"
+  short_description: "Update a known document while preserving its fields"
+  default_prompt: "Use $myrag-update to update this information in the local RAG knowledge base."

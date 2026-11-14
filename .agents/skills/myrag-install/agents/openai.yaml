@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set up myrag locally"
+  short_description: "Inspect hardware and set up CPU or GPU RAG inference"
+  default_prompt: "Use $myrag-install to prepare and start this repository locally."

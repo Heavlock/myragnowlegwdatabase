@@ -1,0 +1,109 @@
+{{ define "index" }}
+{{ if .ErrorMessage }}
+<div class="error">{{ .ErrorMessage }}</div>
+{{ end }}
+{{ if .SuccessNotice }}
+<div class="success">{{ .SuccessNotice }}</div>
+{{ end }}
+
+<div class="grid">
+    <section class="card">
+        <h2>Insert a document</h2>
+        <form method="post" action="/">
+            <input type="hidden" name="form_kind" value="insert">
+
+            <label for="document_id">document_id (leave blank to create a document)</label>
+            <input id="document_id" name="document_id" value="{{ .DocumentForm.DocumentID }}">
+
+            <label for="title">title</label>
+            <input id="title" name="title" value="{{ .DocumentForm.Title }}">
+
+            <label for="source_uri">source_uri</label>
+            <input id="source_uri" name="source_uri" value="{{ .DocumentForm.SourceURI }}">
+
+            <label for="source_type">source_type</label>
+            <input id="source_type" name="source_type" value="{{ .DocumentForm.SourceType }}">
+
+            <label for="language">language</label>
+            <input id="language" name="language" value="{{ .DocumentForm.Language }}">
+
+            <label for="content">content</label>
+            <textarea id="content" name="content">{{ .DocumentForm.Content }}</textarea>
+
+            <label for="metadata">metadata</label>
+            <textarea id="metadata" name="metadata">{{ .DocumentForm.Metadata }}</textarea>
+
+            <button type="submit">Save document</button>
+        </form>
+
+        {{ if .UpsertResult }}
+        <div class="result">
+            <div><strong>status:</strong> {{ .UpsertResult.Status }}</div>
+            <div><strong>document_id:</strong> {{ .UpsertResult.DocumentID }}</div>
+            <div><strong>chunks_created:</strong> {{ .UpsertResult.ChunksCreated }}</div>
+        </div>
+        {{ end }}
+    </section>
+
+    <section class="card">
+        <h2>Reindex documents</h2>
+        <form method="post" action="/">
+            <input type="hidden" name="form_kind" value="reindex">
+
+            <label for="reindex_mode">mode</label>
+            <select id="reindex_mode" name="reindex_mode">
+                <option value="single" {{ if eq .ReindexForm.Mode "single" }}selected{{ end }}>single</option>
+                <option value="list" {{ if eq .ReindexForm.Mode "list" }}selected{{ end }}>list</option>
+                <option value="all" {{ if eq .ReindexForm.Mode "all" }}selected{{ end }}>all</option>
+            </select>
+
+            <label for="document_ids">document_ids</label>
+            <input id="document_ids" name="document_ids" value="{{ .ReindexForm.DocumentIDs }}">
+
+            <div class="meta">Choose single, list, or all. For list, enter comma-separated document IDs.</div>
+
+            <button type="submit">Reindex</button>
+        </form>
+
+        {{ if .ReindexResult }}
+        <div class="result">
+            <div><strong>documents_reindexed:</strong> {{ .ReindexResult.DocumentsReindexed }}</div>
+            <div><strong>chunks_created_total:</strong> {{ .ReindexResult.ChunksCreatedTotal }}</div>
+            <div><strong>document_ids:</strong> {{ .ReindexResult.DocumentIDs }}</div>
+        </div>
+        {{ end }}
+    </section>
+
+    <section class="card">
+        <h2>Semantic search</h2>
+        <form method="post" action="/">
+            <input type="hidden" name="form_kind" value="search">
+
+            <label for="query">query</label>
+            <input id="query" name="query" value="{{ .SearchForm.Query }}">
+
+            <label for="limit">limit</label>
+            <input id="limit" name="limit" value="{{ .SearchForm.Limit }}">
+
+            <button type="submit">Search</button>
+        </form>
+
+        {{ if .SearchResult }}
+            <div class="result">
+                <div><strong>query:</strong> {{ .SearchResult.Query }}</div>
+                <div><strong>limit:</strong> {{ .SearchResult.Limit }}</div>
+            </div>
+            {{ range .SearchResult.Results }}
+            <div class="result">
+                <div><strong>{{ .Title }}</strong></div>
+                <div class="meta">document_id: {{ .DocumentID }}</div>
+                <div class="meta">source_uri: {{ .SourceURI }}</div>
+                <div class="meta">chunk_no: {{ .ChunkNo }}</div>
+                <div class="meta">score: {{ printf "%.6f" .Score }}</div>
+                <div class="chunk">{{ .ChunkText }}</div>
+            </div>
+            {{ end }}
+        {{ end }}
+    </section>
+</div>
+{{ end }}

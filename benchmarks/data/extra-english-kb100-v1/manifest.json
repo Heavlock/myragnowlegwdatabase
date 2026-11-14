@@ -1,0 +1,37 @@
+{
+  "name": "EXTRA-English-KB100 v1",
+  "language": "en",
+  "synthetic": true,
+  "documents": 100,
+  "queries": 320,
+  "positive_judgments": 340,
+  "query_types": {
+    "direct": 100,
+    "paraphrase": 100,
+    "scenario": 100,
+    "multi_article": 20
+  },
+  "article_clusters": {
+    "access": 10,
+    "recovery": 10,
+    "network": 10,
+    "incidents": 10,
+    "knowledge": 10,
+    "billing": 10,
+    "logistics": 10,
+    "data": 10,
+    "workplace": 10,
+    "engineering": 10
+  },
+  "source": "Original authored fictional company knowledge base; no Wikipedia text",
+  "labeling": "Same assistant authored corpus, questions and targets; no independent human annotation",
+  "freeze_policy": "No model results were observed before these corpus and qrels hashes were fixed. Dataset changes require a new version.",
+  "source_records_sha256": "8b3f38487859aa4fab727231b70d16743047ccfe1ae4baf35731da9a410ba54c",
+  "files": {
+    "corpus.jsonl": "c2a5e29e5078fb15ca8c29d2afe62f7056a9f1ff563b39035d34112627cd3594",
+    "queries.jsonl": "c1cd6cfa459e9230d1531b39f39a94022288297b41e3d43d6fabc78ee1b2931b",
+    "judgments.jsonl": "4f856c9c83aaffee3429351bdfd3529702b96672450525e9d901db759993b81f",
+    "qrels/test.tsv": "10a951458cd2eec5a1b5f8082d4e11575936dd3742903fbdfac4c7c4b5713950",
+    "NOTICE.txt": "f25ad59db3452b40dee3b0a416148ae3396c3afeefadff997d4d110d4fb75a51"
+  }
+}

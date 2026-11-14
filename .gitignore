@@ -1,0 +1,25 @@
+# Machine-specific settings and local secrets
+.idea/
+.vscode/
+*.iml
+.env
+.env.*
+!.env.example
+
+# Model weights, private exports, and generated results
+/models/*
+!/models/.gitkeep
+/backups/
+/reports/
+/.cache/
+/benchmarks/*.local.json
+/sql/migrations/*.sql
+
+# Build and interpreter output
+__pycache__/
+*.py[cod]
+.venv*/
+/bin/
+/myrag
+*.test
+/coverage.out

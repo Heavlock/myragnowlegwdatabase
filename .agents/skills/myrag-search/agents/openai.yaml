@@ -1,0 +1,4 @@
+interface:
+  display_name: "Search RAG information"
+  short_description: "Find stored knowledge and read its source documents"
+  default_prompt: "Use $myrag-search to find the relevant information in the local RAG knowledge base."

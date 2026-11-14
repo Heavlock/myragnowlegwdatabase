@@ -1,0 +1,55 @@
+{
+  "dataset": "extra-english-kb100-v1",
+  "cache": ".cache/benchmarks/extra-english-kb100",
+  "postgres_dsn": "postgresql://rag:rag@127.0.0.1:6432/myrag_benchmark_extra",
+  "output": "reports/extra-english-kb100",
+  "seed": 20261112,
+  "models": [
+    {
+      "id": "qwen-q8",
+      "name": "Qwen3-Embedding-0.6B Q8_0",
+      "source": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "model_file": "models/Qwen3-Embedding-0.6B-Q8_0.gguf",
+      "container": "myragnowlegwdatabase-embeddings-1",
+      "dim": 1024,
+      "query_prefix": "Instruct: Given a workplace question, retrieve internal knowledge-base articles that answer the question\nQuery: ",
+      "sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439"
+    },
+    {
+      "id": "bge-small-q8",
+      "name": "BGE-small-en-v1.5 Q8_0",
+      "source": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "conversion_source": "https://huggingface.co/CompendiumLabs/bge-small-en-v1.5-gguf/tree/d32f8c040ea3b516330eeb75b72bcc2d3a780ab7",
+      "model_file": ".cache/benchmarks/models/bge-small-en-v1.5-q8_0.gguf",
+      "container": "myrag-benchmark-bge",
+      "dim": 384,
+      "max_tokens": 512,
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "sha256": "ec38e8da142596baa913124ae50550de284b6916bf59577ef2f0cb9660c2f514",
+      "download_url": "https://huggingface.co/CompendiumLabs/bge-small-en-v1.5-gguf/resolve/d32f8c040ea3b516330eeb75b72bcc2d3a780ab7/bge-small-en-v1.5-q8_0.gguf",
+      "pooling": "cls"
+    },
+    {
+      "id": "minilm-q8",
+      "name": "all-MiniLM-L6-v2 Q8_0",
+      "source": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "conversion_source": "https://huggingface.co/leliuga/all-MiniLM-L6-v2-GGUF/tree/ddf2e25d5b8530422e7b14aa39f33a657ff9aec0",
+      "model_file": ".cache/benchmarks/models/all-MiniLM-L6-v2.Q8_0.gguf",
+      "container": "myrag-benchmark-minilm",
+      "dim": 384,
+      "max_tokens": 256,
+      "query_prefix": "",
+      "sha256": "e5ec722e8c82dc4ffaf965175ca472f5da3f97b695590b5b0780bdbfa29bcaf3",
+      "download_url": "https://huggingface.co/leliuga/all-MiniLM-L6-v2-GGUF/resolve/ddf2e25d5b8530422e7b14aa39f33a657ff9aec0/all-MiniLM-L6-v2.Q8_0.gguf",
+      "pooling": "mean"
+    }
+  ],
+  "runtime_image": "ghcr.io/ggml-org/llama.cpp@sha256:2103d1f4f2e2e223ad80587dcb39fc15a9f912f29ae1fa9fc1193fe8c1aea82f",
+  "dataset_name": "EXTRA-English-KB100 v1",
+  "data_directory": "benchmarks/data/extra-english-kb100-v1",
+  "dataset_manifest": "benchmarks/data/extra-english-kb100-v1/manifest.json",
+  "expected_documents": 100,
+  "expected_queries": 320,
+  "dataset_manifest_sha256": "35810993317f3e31321ea4cb65c313a6899962463da45cdc1a8f501fe93f14cb",
+  "chunks_sha256": "03964546fd23c1bf43010aded98c54fefe46ab4e05c75716a74f265d97ed6edc"
+}
